@@ -1,0 +1,33 @@
+{
+  "name": "studio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "In this project I am trying to build a website using `React`, `Sanity.io` and `Tailwind CSS`. My main goal is to learn `Sanity.io` and explore more the **Headless CMS** concept, as well as practice more the rest of the technologies",
+  "main": "package.json",
+  "author": "Elena Marinaki <rhapsodyenmauve@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "sanity start",
+    "build": "sanity build"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/base": "^2.23.2",
+    "@sanity/core": "^2.23.2",
+    "@sanity/default-layout": "^2.23.2",
+    "@sanity/default-login": "^2.23.2",
+    "@sanity/desk-tool": "^2.23.2",
+    "@sanity/vision": "^2.23.2",
+    "prop-types": "^15.7",
+    "react": "^17.0",
+    "react-dom": "^17.0",
+    "styled-components": "^5.2.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:elenamarinaki/portfolio-test.git"
+  }
+}

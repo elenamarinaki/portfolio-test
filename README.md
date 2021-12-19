@@ -24,3 +24,5 @@ In this project I am trying to build a website using `React`, `Sanity.io` and `T
 - how `Sanity` 'trusts' and communicates with `React`
 - https://www.sanity.io/manage/personal/project/rq4e9768/api
 - add `http://localhost:3000`
+
+⚠️ we will add the **hosted url** in the above settings, once our site is deployed

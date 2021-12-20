@@ -426,6 +426,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: auto;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -436,6 +440,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-1\/3 {
   width: 33.333333%;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -456,8 +464,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .bg-softBlack {
@@ -473,6 +491,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-darkVeraman {
   --tw-bg-opacity: 1;
   background-color: rgb(10 65 49 / var(--tw-bg-opacity));
+}
+
+.bg-red {
+  --tw-bg-opacity: 1;
+  background-color: rgb(119 12 12 / var(--tw-bg-opacity));
 }
 
 .p-8 {
@@ -500,4 +523,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-red {
   --tw-text-opacity: 1;
   color: rgb(119 12 12 / var(--tw-text-opacity));
+}
+
+.text-mustard {
+  --tw-text-opacity: 1;
+  color: rgb(177 104 13 / var(--tw-text-opacity));
+}
+
+.hover\:underline:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }

@@ -1,11 +1,20 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 import Home from './components/Home.jsx';
+import About from './components/About.jsx';
+import SinglePost from './components/SinglePost.jsx';
+import Post from './components/Post.jsx';
+import Project from './components/Project.jsx';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-              <Route element={<Home />} path='/' />
+        <Route element={<Home />} path='/' />
+        <Route element={<About />} path='/about' />
+        <Route element={<SinglePost />} path='/post/:slag' />
+        <Route element={<Post />} path='/post' />
+        <Route element={<Project />} path='/project' />
         {/* <div className='font-mono h-screen bg-softBlack m-auto'>
           <header>
             <div className='text-3xl text-white p-8'>

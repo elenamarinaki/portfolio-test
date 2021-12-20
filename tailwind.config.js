@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./src/**/*.{html,js, jsx}'],
+  content: ['./src/**/*.{html,js,jsx}'],
   theme: {
     colors: {
       red: '#770C0C',
@@ -8,7 +8,7 @@ module.exports = {
       darkVeraman: '#0A4131',
       mustard: '#B1680D',
       softBlack: '#1c1c1c',
-      white: '#fafafa'
+      white: '#fafafa',
     },
     extend: {},
   },

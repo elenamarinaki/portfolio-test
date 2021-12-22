@@ -13,13 +13,13 @@ const NavBar = () => {
             Sanity
           </NavLink>
           <NavLink to='/post' className='hover:underline'>
-            Blog Posts
+            Blog
           </NavLink>
           <NavLink to='/project' className='hover:underline'>
             Projects
           </NavLink>
           <NavLink to='/about' className='hover:underline'>
-            About Me
+            About
           </NavLink>
         </nav>
       </div>

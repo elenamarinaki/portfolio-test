@@ -10,7 +10,11 @@ module.exports = {
       softBlack: '#1f1f1f',
       white: '#fafafa',
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        'redGlow': '2px 5px 5px 1px rgba(133, 12, 12, 0.5)',
+      },
+    },
   },
   fontFamily: {
     sans: ['Graphik', 'sans-serif'],

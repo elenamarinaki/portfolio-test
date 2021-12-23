@@ -14,10 +14,10 @@ function App() {
         <NavBar />
         <Routes>
           <Route element={<Home />} path='/' exact />
-          <Route element={<About />} path='/about' exact />
-          <Route element={<SinglePost />} path='/post/:slag' exact />
-          <Route element={<Post />} path='/post' exact />
-          <Route element={<Project />} path='/project' exact />
+          <Route element={<About />} path='/about' />
+          <Route element={<SinglePost />} path='/post/:slag' />
+          <Route element={<Post />} path='/post' />
+          <Route element={<Project />} path='/project' />
         </Routes>
       </BrowserRouter>
     </div>

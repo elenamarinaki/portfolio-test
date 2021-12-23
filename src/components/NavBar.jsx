@@ -32,7 +32,6 @@ const NavBar = () => {
             Sanity
           </NavLink>
           <NavLink
-            exact
             to='/post'
             className={({ isActive }) =>
               isActive
@@ -43,7 +42,6 @@ const NavBar = () => {
             Blog
           </NavLink>
           <NavLink
-            exact
             to='/project'
             className={({ isActive }) =>
               isActive
@@ -54,7 +52,6 @@ const NavBar = () => {
             Projects
           </NavLink>
           <NavLink
-            exact
             to='/about'
             className={({ isActive }) =>
               isActive

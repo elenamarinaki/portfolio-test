@@ -17,7 +17,7 @@ const NavBar = () => {
   return (
     <header>
       <div className='container mx-auto flex justify-between'>
-        <nav className='flex flex-row justify-center items-center p-8 text-mustard space-x-4'>
+        <nav className='inline-flex justify-center items-center text-mustard space-x-4'>
           <NavLink
             exact
             to='/'
@@ -65,7 +65,7 @@ const NavBar = () => {
             About
           </NavLink>
         </nav>
-        <div>
+        <div className='inline-flex p-4 my-4 space-x-2'>
           <SocialIcon
             url='https://www.youtube.com/channel/UCb-BPyGLnxMOESIFy3vkg_w'
             className=''

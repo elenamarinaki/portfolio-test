@@ -2,20 +2,20 @@ import React from 'react';
 import { useLocation, useNavigate, useParams, NavLink } from 'react-router-dom';
 import { SocialIcon } from 'react-social-icons';
 
-const withRouter = (Component) => {
-  function ComponentWithRouterProp(props) {
-    let location = useLocation();
-    let navigate = useNavigate();
-    let params = useParams();
-    return <Component {...props} router={{ location, navigate, params }} />;
-  }
+// const withRouter = (Component) => {
+//   function ComponentWithRouterProp(props) {
+//     let location = useLocation();
+//     let navigate = useNavigate();
+//     let params = useParams();
+//     return <Component {...props} router={{ location, navigate, params }} />;
+//   }
 
-  return ComponentWithRouterProp;
-};
+//   return ComponentWithRouterProp;
+// };
 
 const NavBar = () => {
   return (
-    <header>
+    <header className='sticky top-0 bg-softBlack border-b-4 border-golden border-dashed shadow-lg'>
       <div className='container mx-auto flex justify-between'>
         <nav className='inline-flex justify-center items-center text-mustard space-x-4'>
           <NavLink
@@ -86,4 +86,4 @@ const NavBar = () => {
   );
 };
 
-export default withRouter(NavBar);
+export default NavBar;

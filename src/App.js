@@ -9,7 +9,7 @@ import NavBar from './components/NavBar.jsx';
 
 function App() {
   return (
-    <div className='font-mono h-screen bg-softBlack m-auto'>
+    <div className='font-mono bg-softBlack min-h-screen m-auto'>
       <BrowserRouter>
         <NavBar />
         <Routes>

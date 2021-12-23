@@ -7,7 +7,7 @@ module.exports = {
       golden: '#825A2C',
       darkVeraman: '#0A4131',
       mustard: '#B1680D',
-      softBlack: '#1c1c1c',
+      softBlack: '#1f1f1f',
       white: '#fafafa',
     },
     extend: {},

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation, useNavigate, useParams, NavLink } from 'react-router-dom';
 import { SocialIcon } from 'react-social-icons';
+// import { AiFillTwitterCircle } from 'react-icons/ai';
 
 // const withRouter = (Component) => {
 //   function ComponentWithRouterProp(props) {
@@ -67,16 +68,17 @@ const NavBar = () => {
             url='https://www.youtube.com/channel/UCb-BPyGLnxMOESIFy3vkg_w'
             className=''
             target='_blank'
-            fgColor='#fff'
+            bgColor='#825A2C'
             style={{ height: 35, width: 35 }}
           />
           <SocialIcon
             url='https://twitter.com/rhuave'
             className=''
             target='_blank'
-            fgColor='#fff'
+            bgColor='#825A2C'
             style={{ height: 35, width: 35 }}
           />
+          {/* <AiFillTwitterCircle /> */}
         </div>
       </div>
     </header>

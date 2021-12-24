@@ -26,14 +26,14 @@ const Post = () => {
         <div className='flex flex-col justify-center items-center space-y-4'>
           {postData &&
             postData.map((post, index) => (
-              <article
-                className={
-                  index % 2 === 0
-                    ? 'text-white bg-mustard bg-opacity-30 border-2 border-mustard rounded-lg p-4'
-                    : 'text-white bg-darkVeraman bg-opacity-30 border-2 border-darkVeraman rounded-lg p-4'
-                }
-              >
-                <Link to={'/post/' + post.slug.current} key={post.slug.current}>
+              <Link to={'/post/' + post.slug.current} key={post.slug.current}>
+                <article
+                  className={
+                    index % 2 === 0
+                      ? 'text-white bg-mustard bg-opacity-30 border-2 border-mustard rounded-lg p-4 w-96'
+                      : 'text-white bg-darkVeraman bg-opacity-30 border-2 border-darkVeraman rounded-lg p-4 w-96'
+                  }
+                >
                   <span>
                     <img
                       className='w-12'
@@ -44,8 +44,8 @@ const Post = () => {
                       <h3>{post.title}</h3>
                     </span>
                   </span>
-                </Link>
-              </article>
+                </article>
+              </Link>
             ))}
         </div>
       </section>

@@ -12,7 +12,7 @@ const Post = () => {
       )
       .then((data) => setPost(data))
       .catch(console.error);
-  });
+  }, []);
 
   return (
     <main>

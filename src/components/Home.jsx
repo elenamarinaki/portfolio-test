@@ -11,42 +11,6 @@ const Home = () => {
           <p className='text-white bg-darkVeraman bg-opacity-30 border-2 border-darkVeraman rounded-lg p-4'>
             This is a blog post
           </p>
-          <p className='text-white bg-mustard bg-opacity-30 border-2 border-mustard rounded-lg p-4'>
-            This is a blog post
-          </p>
-          <p className='text-white bg-darkVeraman bg-opacity-30 border-2 border-darkVeraman rounded-lg p-4'>
-            This is a blog post
-          </p>
-          <p className='text-white bg-mustard bg-opacity-30 border-2 border-mustard rounded-lg p-4'>
-            This is a blog post
-          </p>
-          <p className='text-white bg-darkVeraman bg-opacity-30 border-2 border-darkVeraman rounded-lg p-4'>
-            This is a blog post
-          </p>
-          <p className='text-white bg-mustard bg-opacity-30 border-2 border-mustard rounded-lg p-4'>
-            This is a blog post
-          </p>
-          <p className='text-white bg-darkVeraman bg-opacity-30 border-2 border-darkVeraman rounded-lg p-4'>
-            This is a blog post
-          </p>
-          <p className='text-white bg-mustard bg-opacity-30 border-2 border-mustard rounded-lg p-4'>
-            This is a blog post
-          </p>
-          <p className='text-white bg-darkVeraman bg-opacity-30 border-2 border-darkVeraman rounded-lg p-4'>
-            This is a blog post
-          </p>
-          <p className='text-white bg-mustard bg-opacity-30 border-2 border-mustard rounded-lg p-4'>
-            This is a blog post
-          </p>
-          <p className='text-white bg-darkVeraman bg-opacity-30 border-2 border-darkVeraman rounded-lg p-4'>
-            This is a blog post
-          </p>
-          <p className='text-white bg-mustard bg-opacity-30 border-2 border-mustard rounded-lg p-4'>
-            This is a blog post
-          </p>
-          <p className='text-white bg-darkVeraman bg-opacity-30 border-2 border-darkVeraman rounded-lg p-4'>
-            This is a blog post
-          </p>
         </div>
       </main>
     </div>

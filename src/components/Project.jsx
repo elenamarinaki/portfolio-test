@@ -26,7 +26,7 @@ const Project = () => {
         <section>
           {projectData &&
             projectData.map((project, index) => (
-              <article>
+              <article className=' mx-auto my-6 text-white bg-orange bg-opacity-30 border-2 border-orange rounded-lg p-4 w-96'>
                 <h3>
                   <a
                     href={project.link}
@@ -37,7 +37,7 @@ const Project = () => {
                     {project.title}
                   </a>
                 </h3>
-                <div>
+                <div className='flex flex-col'>
                   <span>
                     Finished on: {new Date(project.date).toLocaleDateString()}
                   </span>

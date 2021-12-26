@@ -13,7 +13,7 @@ export default {
       type: 'datetime',
     },
     {
-      name: 'place',
+      name: 'company',
       type: 'string',
     },
     {

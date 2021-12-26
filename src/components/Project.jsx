@@ -7,7 +7,7 @@ const Project = () => {
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[_type == 'project']{title, date, place, description, projectType, link, tags}`
+        `*[_type == 'project']{title, date, company, description, projectType, link, tags}`
       )
       .then((data) => setProjectData(data))
       .catch(console.error);
@@ -27,29 +27,35 @@ const Project = () => {
           {projectData &&
             projectData.map((project, index) => (
               <article className=' mx-auto my-6 text-white bg-orange bg-opacity-30 border-2 border-orange rounded-lg p-4 w-96'>
-                <h3>
-                  <a
-                    href={project.link}
-                    alt={project.title}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    {project.title}
-                  </a>
-                </h3>
-                <div className='flex flex-col'>
+                {/* --------------------------- PROJECT TITLE */}
+                <div className='flex flex-row justify-between items-baseline border-b-2 border-orange'>
+                  <h3>
+                    <a
+                      href={project.link}
+                      alt={project.title}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      {project.title}
+                    </a>
+                  </h3>
+                  <p className='text-xs p-1 mb-1 bg-golden rounded-2xl'>
+                    {project.projectType}
+                  </p>
+                </div>
+
+                {/* --------------------------- PROJECT DETAILS */}
+                <div className='flex flex-col mt-2'>
                   <span>
                     Finished on: {new Date(project.date).toLocaleDateString()}
                   </span>
-                  <span>Company: {project.place}</span>
-                  <span>Type: {project.projectType}</span>
+                  <span>Company: {project.company}</span>
                   <p>{project.description}</p>
                   <a
                     href={project.link}
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    {' '}
                     View the project!
                     <span role='img' aria-label='right-arrow'>
                       ⇢

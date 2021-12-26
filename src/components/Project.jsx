@@ -26,7 +26,7 @@ const Project = () => {
         <section>
           {projectData &&
             projectData.map((project, index) => (
-              <article className=' mx-auto my-6 text-white bg-orange bg-opacity-30 border-2 border-orange rounded-lg p-4 w-96'>
+              <article className=' mx-auto my-6 text-white bg-orange bg-opacity-20 border-2 border-orange rounded-lg p-4 w-96'>
                 {/* --------------------------- PROJECT TITLE */}
                 <div className='flex flex-row justify-between items-baseline border-b-2 border-orange'>
                   <h3>
@@ -45,7 +45,7 @@ const Project = () => {
                 </div>
 
                 {/* --------------------------- PROJECT DETAILS */}
-                <div className='flex flex-col mt-2'>
+                <div className='flex flex-col mt-4'>
                   <span>
                     Finished on: {new Date(project.date).toLocaleDateString()}
                   </span>
@@ -55,10 +55,16 @@ const Project = () => {
                     href={project.link}
                     target='_blank'
                     rel='noopener noreferrer'
+                    className='mt-2'
                   >
-                    View the project!
-                    <span role='img' aria-label='right-arrow'>
-                      ⇢
+                    <span className='underline'>View the project!</span>
+                    <span
+                      role='img'
+                      aria-label='right-arrow'
+                      className='text-lg'
+                    >
+                      {' '}
+                      🔗
                     </span>
                   </a>
                 </div>

@@ -26,7 +26,7 @@ const Project = () => {
         <section>
           {projectData &&
             projectData.map((project, index) => (
-              <article className=' mx-auto my-6 text-white bg-orange bg-opacity-20 border-2 border-orange rounded-lg p-4 w-96'>
+              <article className=' mx-auto mt-6 text-white bg-orange bg-opacity-20 border-2 border-orange rounded-lg p-4 w-96'>
                 {/* --------------------------- PROJECT TITLE */}
                 <div className='flex flex-row justify-between items-baseline border-b-2 border-orange'>
                   <h3>

@@ -39,7 +39,7 @@ const Project = () => {
                       {project.title}
                     </a>
                   </h3>
-                  <p className='text-xs p-1 mb-1 bg-golden rounded-2xl'>
+                  <p className='text-xs p-1 mb-1 bg-golden rounded-xl'>
                     {project.projectType}
                   </p>
                 </div>

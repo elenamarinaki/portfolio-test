@@ -9,6 +9,7 @@ const urlFor = (source) => builder.image(source);
 
 const SinglePost = () => {
   const [singlePost, setSinglePost] = useState(null);
+  // let singlePost = {};
   const { slug } = useParams();
 
   useEffect(() => {
@@ -29,8 +30,13 @@ const SinglePost = () => {
         "authorImage": author->image
     }`
       )
+      .then((data) => {
+        let query = data[0];
+        return query;
+      })
       .then(console.log)
-      .then((data) => setSinglePost(data[0]))
+      .then((query) => setSinglePost(query))
+      .then(() => console.log(singlePost))
       .catch(console.error);
   }, [slug]);
 
@@ -67,7 +73,9 @@ const SinglePost = () => {
           </article>
         </main>
       ) : (
-        <div className='text-4xl mt-48'>Loading... 🍬</div>
+        <div className='text-4xl mt-48'>
+          Loading...{console.log(singlePost)} 🍬
+        </div>
       )}
     </div>
   );

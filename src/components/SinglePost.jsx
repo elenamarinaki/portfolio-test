@@ -10,7 +10,7 @@ const urlFor = (source) => builder.image(source);
 const SinglePost = () => {
   const [singlePost, setSinglePost] = useState(null);
   const { slug } = useParams();
-  console.log('slug outside is: ' + slug);
+
   useEffect(() => {
     sanityClient
       .fetch(
@@ -29,7 +29,7 @@ const SinglePost = () => {
         "authorImage": author->image
     }`
       )
-      .then((data) => console.log('data is: ' + data))
+      .then(console.log)
       .then((data) => setSinglePost(data[0]))
       .catch(console.error);
   }, [slug]);

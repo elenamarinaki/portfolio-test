@@ -8,8 +8,7 @@ const builder = imageUrlBuilder(sanityClient);
 const urlFor = (source) => builder.image(source);
 
 const SinglePost = () => {
-  const [singlePost, setSinglePost] = useState(null);
-  // let singlePost = {};
+  const [singlePost, setSinglePost] = useState();
   const { slug } = useParams();
 
   useEffect(() => {
@@ -20,23 +19,17 @@ const SinglePost = () => {
         _id,
         slug,
         mainImage{
-            asset->{
-                _id,
-                url
+          asset->{
+            _id,
+              url
             }
-        },
-        body,
-        "name": author->name,
-        "authorImage": author->image
-    }`
+          },
+          body,
+          "name": author->name,
+          "authorImage": author->image
+        }`
       )
-      .then((data) => {
-        let query = data[0];
-        return query;
-      })
-      .then(console.log)
-      .then((query) => setSinglePost(query))
-      .then(() => console.log(singlePost))
+      .then((res) => setSinglePost(res[0]))
       .catch(console.error);
   }, [slug]);
 
@@ -50,16 +43,18 @@ const SinglePost = () => {
                 <div>
                   <h1>{singlePost.title}</h1>
                   <div>
-                    <img
+                    {/* <img
                       src={urlFor(singlePost.authorImage.url())}
                       alt={singlePost.name}
-                    />
+                    /> */}
                     <p>{singlePost.name}</p>
                   </div>
                 </div>
                 <img
                   src={singlePost.mainImage.asset.url}
                   alt={singlePost.title}
+                  width='200'
+                  height='200'
                 />
               </div>
             </header>
@@ -73,9 +68,7 @@ const SinglePost = () => {
           </article>
         </main>
       ) : (
-        <div className='text-4xl mt-48'>
-          Loading...{console.log(singlePost)} 🍬
-        </div>
+        <div className='text-4xl mt-48'>Loading... 🍬</div>
       )}
     </div>
   );

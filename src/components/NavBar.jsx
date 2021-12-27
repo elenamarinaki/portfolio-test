@@ -20,7 +20,7 @@ const NavBar = () => {
       <div className='container mx-auto flex justify-between'>
         <nav className='inline-flex justify-center items-center text-mustard space-x-4'>
           <NavLink
-            exact
+            exact='true'
             to='/'
             className={({ isActive }) =>
               isActive

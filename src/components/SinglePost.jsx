@@ -11,12 +11,32 @@ const SinglePost = () => {
   const { slug } = useParams();
 
   useEffect(() => {
-    sanityClient.fetch(`*[slug.current == '${slug}']{
-        
-    }`);
-  });
+    sanityClient
+      .fetch(
+        `*[slug.current == '${slug}']{
+        title,
+        _id,
+        slug,
+        mainImage{
+            asset->{
+                _id,
+                url
+            }
+        },
+        body,
+        'name': author->name,
+        'authorImage': author->image
+    }`
+      )
+      .then((data) => setSinglePost(data[0]))
+      .catch(console.error);
+  }, [slug]);
 
-  return <div></div>;
+  return (
+    <div className='flex flex-col items-center text-white'>
+      {singlePost ? '' : <div className='text-4xl mt-48'>Loading... 🍬</div>}
+    </div>
+  );
 };
 
 export default SinglePost;

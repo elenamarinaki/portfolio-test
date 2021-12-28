@@ -34,27 +34,29 @@ const SinglePost = () => {
   }, [slug]);
 
   return (
-    <div className='flex flex-col items-center text-white'>
+    <div className='flex flex-col items-center text-white max-w-3xl sm:max-w-2xl mx-auto'>
       {singlePost ? (
         <main>
           <article>
             <header>
               <div>
-                <div>
-                  <h1>{singlePost.title}</h1>
-                  <div>
-                    {/* <img
+                <div className='my-8'>
+                  <h1 className='text-3xl p-1 bg-gradient-to-r from-mustard to-golden rounded'>
+                    {singlePost.title}
+                  </h1>
+                  {/* <div>
+                    <img
                       src={urlFor(singlePost.authorImage.url())}
                       alt={singlePost.name}
-                    /> */}
+                    />
                     <p>{singlePost.name}</p>
-                  </div>
+                  </div> */}
                 </div>
                 <img
                   src={singlePost.mainImage.asset.url}
                   alt={singlePost.title}
                   width='200'
-                  height='200'
+                  height='200' className='mb-8'
                 />
               </div>
             </header>

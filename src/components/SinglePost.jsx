@@ -41,7 +41,7 @@ const SinglePost = () => {
             <header>
               <div>
                 <div className='my-8'>
-                  <h1 className='text-3xl p-1 bg-gradient-to-r from-mustard to-golden rounded'>
+                  <h1 className='text-3xl p-1 bg-gradient-to-r from-mustard to-darkVeraman rounded'>
                     {singlePost.title}
                   </h1>
                   {/* <div>

@@ -33,11 +33,17 @@ const About = () => {
         // </p>
         <main>
           <div>
-            <section>
+            <section className='my-8'>
               {/* <img src={urlFor(author.authorImage).url()} alt='' /> */}
-              <div>
-                <h1></h1>
-                <div>BLOCK CONTENT</div>
+              <div className='space-y-4'>
+                <h1 className='text-3xl'>Hey there! 👋</h1>
+                <div>
+                  <BlockContent
+                    blocks={author.bio}
+                    projectId='rq4e9768'
+                    dataset='production' className='text-3xl'
+                  />
+                </div>
               </div>
             </section>
           </div>

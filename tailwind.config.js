@@ -12,7 +12,9 @@ module.exports = {
     },
     extend: {
       boxShadow: {
-        'redGlow': '2px 5px 5px 1px rgba(133, 12, 12, 0.5)',
+        redGlow: '2px 5px 5px 1px rgba(133, 12, 12, 0.5)',
+        yellowGlow: '2px 5px 5px 1px rgba(201, 128, 14, 0.5)',
+        greenGlow: '2px 5px 5px 1px rgba(11, 76, 59, 0.5)',
       },
     },
   },

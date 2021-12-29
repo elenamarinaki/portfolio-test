@@ -30,8 +30,8 @@ const Post = () => {
                 <article
                   className={
                     index % 2 === 0
-                      ? 'text-white bg-mustard bg-opacity-30 border-2 border-mustard rounded-lg p-4 w-96'
-                      : 'text-white bg-darkVeraman bg-opacity-30 border-2 border-darkVeraman rounded-lg p-4 w-96'
+                      ? 'text-white bg-mustard bg-opacity-30 border-2 border-mustard rounded-lg p-4 w-96 hover:shadow-yellowGlow'
+                      : 'text-white bg-darkVeraman bg-opacity-30 border-2 border-darkVeraman rounded-lg p-4 w-96 hover:shadow-greenGlow'
                   }
                 >
                   <span>

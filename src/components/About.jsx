@@ -34,7 +34,7 @@ const About = () => {
         <main>
           <div>
             <section className='my-8'>
-              {/* <img src={urlFor(author.authorImage).url()} alt='' /> */}
+              <img src={urlFor(author.authorImage).url()} alt='' />
               <div className='space-y-4'>
                 <h1 className='text-3xl'>Hey there! 👋</h1>
                 <div>

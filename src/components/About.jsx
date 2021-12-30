@@ -34,14 +34,14 @@ const About = () => {
         <main>
           <div>
             <section className='my-8'>
-              <img src={urlFor(author.authorImage).url()} alt='' />
+              <img src={urlFor(author.authorImage).url()} alt={author.name} width='150' className='mx-auto rounded-full mb-8' />
               <div className='space-y-4'>
                 <h1 className='text-3xl'>Hey there! 👋</h1>
                 <div>
                   <BlockContent
                     blocks={author.bio}
                     projectId='rq4e9768'
-                    dataset='production' className='text-3xl'
+                    dataset='production' className='text-xl'
                   />
                 </div>
               </div>

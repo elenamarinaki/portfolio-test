@@ -26,3 +26,6 @@ In this project I am trying to build a website using `React`, `Sanity.io` and `T
 - add `http://localhost:3000`
 
 ⚠️ we will add the **hosted url** in the above settings, once our site is deployed
+
+### Learnings
+- If the we haven't uploaded an image file in the `Sanity`, the `imageUrlBuilder` won't work!

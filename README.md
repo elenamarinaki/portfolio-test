@@ -31,4 +31,3 @@ In this project I am trying to build a website using `React`, `Sanity.io` and `T
 - If the we haven't uploaded an image file in the `Sanity`, the `imageUrlBuilder` won't work!
 - The page won't render at all without and the `fetch` query (with `groq`) will keep returning nothing 🤔
 - Had to `then(() => {console.log(data)})` every time after a `groq` request. Sometimes we need access to the object itself (`data`), sometimes to the first index of the array (`data[0]`).
-                                                                                                

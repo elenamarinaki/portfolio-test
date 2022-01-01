@@ -29,5 +29,5 @@ In this project I am trying to build a website using `React`, `Sanity.io` and `T
 
 ### Learnings
 - If the we haven't uploaded an image file in the `Sanity`, the `imageUrlBuilder` won't work!
-- The page won't render at all without and the `fetch` query (with `groq`) will keep returning nothing.
+- The page won't render at all without and the `fetch` query (with `groq`) will keep returning nothing 🤔
 
